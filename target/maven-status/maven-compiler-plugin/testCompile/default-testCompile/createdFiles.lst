@@ -1,0 +1,7 @@
+Utilities\DriverManager.class
+Utilities\PlaywrightFactory.class
+Utilities\Configuarations.class
+StepDefinitions\Hooks.class
+Runner\TestRunner.class
+StepDefinitions\LoginPageSteps.class
+Utilities\ExtentReportManager.class

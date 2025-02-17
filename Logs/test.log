@@ -1,0 +1,62 @@
+2025-02-17 22:33:48 INFO  Hooks:16 - Test execution started
+2025-02-17 22:33:49 INFO  PlaywrightFactory:16 - Initializing Playwright browser
+2025-02-17 22:33:59 INFO  LoginPageSteps:39 - Navigating to login page
+2025-02-17 22:33:59 INFO  LoginPageSteps:48 - Entering credentials
+2025-02-17 22:33:59 INFO  LoginPage:25 - Entering username: standard_user
+2025-02-17 22:33:59 INFO  LoginPageSteps:55 - Entering credentials
+2025-02-17 22:33:59 INFO  LoginPage:30 - Entering password: secret_sauce
+2025-02-17 22:33:59 INFO  LoginPageSteps:63 - Clicking login button
+2025-02-17 22:33:59 INFO  LoginPage:35 - Clicking on login button
+2025-02-17 22:33:59 INFO  Hooks:23 - Test execution finished
+2025-02-17 22:36:49 INFO  Hooks:16 - Test execution started
+2025-02-17 22:36:49 INFO  PlaywrightFactory:16 - Initializing Playwright browser
+2025-02-17 22:36:57 INFO  LoginPageSteps:39 - Navigating to login page
+2025-02-17 22:36:58 INFO  LoginPageSteps:48 - Entering credentials
+2025-02-17 22:36:58 INFO  LoginPage:25 - Entering username: standard_user
+2025-02-17 22:36:58 INFO  LoginPageSteps:55 - Entering credentials
+2025-02-17 22:36:58 INFO  LoginPage:30 - Entering password: secret_sauce
+2025-02-17 22:36:58 INFO  LoginPageSteps:63 - Clicking login button
+2025-02-17 22:36:58 INFO  LoginPage:35 - Clicking on login button
+2025-02-17 22:36:59 INFO  LoginPageSteps:72 - Verifying if homepage is displayed
+2025-02-17 22:36:59 INFO  HomePage:21 - Homepage is displayed
+2025-02-17 22:36:59 INFO  PlaywrightFactory:25 - Closing browser
+2025-02-17 22:36:59 INFO  Hooks:23 - Test execution finished
+2025-02-17 22:38:14 INFO  Hooks:16 - Test execution started
+2025-02-17 22:38:15 INFO  PlaywrightFactory:16 - Initializing Playwright browser
+2025-02-17 22:38:23 INFO  LoginPageSteps:39 - Navigating to login page
+2025-02-17 22:38:23 INFO  LoginPageSteps:48 - Entering credentials
+2025-02-17 22:38:23 INFO  LoginPage:25 - Entering username: standard_user
+2025-02-17 22:38:23 INFO  LoginPageSteps:55 - Entering credentials
+2025-02-17 22:38:23 INFO  LoginPage:30 - Entering password: secret_sauce
+2025-02-17 22:38:23 INFO  LoginPageSteps:63 - Clicking login button
+2025-02-17 22:38:23 INFO  LoginPage:35 - Clicking on login button
+2025-02-17 22:38:23 INFO  LoginPageSteps:72 - Verifying if homepage is displayed
+2025-02-17 22:38:23 INFO  HomePage:21 - Homepage is displayed
+2025-02-17 22:38:23 INFO  PlaywrightFactory:25 - Closing browser
+2025-02-17 22:38:24 INFO  Hooks:23 - Test execution finished
+2025-02-17 22:49:27 INFO  Hooks:16 - Test execution started
+2025-02-17 22:49:27 INFO  PlaywrightFactory:16 - Initializing Playwright browser
+2025-02-17 22:49:36 INFO  LoginPageSteps:39 - Navigating to login page
+2025-02-17 22:49:36 INFO  LoginPageSteps:48 - Entering credentials
+2025-02-17 22:49:36 INFO  LoginPage:25 - Entering username: standard_user
+2025-02-17 22:49:36 INFO  LoginPageSteps:55 - Entering credentials
+2025-02-17 22:49:36 INFO  LoginPage:30 - Entering password: secret_sauce
+2025-02-17 22:49:36 INFO  LoginPageSteps:63 - Clicking login button
+2025-02-17 22:49:36 INFO  LoginPage:35 - Clicking on login button
+2025-02-17 22:49:36 INFO  LoginPageSteps:72 - Verifying if homepage is displayed
+2025-02-17 22:49:37 INFO  HomePage:21 - Homepage is displayed
+2025-02-17 22:49:37 INFO  PlaywrightFactory:25 - Closing browser
+2025-02-17 22:49:37 INFO  Hooks:23 - Test execution finished
+2025-02-17 22:54:17 INFO  Hooks:16 - Test execution started
+2025-02-17 22:54:17 INFO  PlaywrightFactory:16 - Initializing Playwright browser
+2025-02-17 22:54:25 INFO  LoginPageSteps:39 - Navigating to login page
+2025-02-17 22:54:25 INFO  LoginPageSteps:48 - Entering credentials
+2025-02-17 22:54:25 INFO  LoginPage:25 - Entering username: standard_user
+2025-02-17 22:54:25 INFO  LoginPageSteps:55 - Entering credentials
+2025-02-17 22:54:25 INFO  LoginPage:30 - Entering password: secret_sauce
+2025-02-17 22:54:25 INFO  LoginPageSteps:63 - Clicking login button
+2025-02-17 22:54:25 INFO  LoginPage:35 - Clicking on login button
+2025-02-17 22:54:26 INFO  LoginPageSteps:72 - Verifying if homepage is displayed
+2025-02-17 22:54:26 INFO  HomePage:21 - Homepage is displayed
+2025-02-17 22:54:26 INFO  PlaywrightFactory:25 - Closing browser
+2025-02-17 22:54:26 INFO  Hooks:23 - Test execution finished

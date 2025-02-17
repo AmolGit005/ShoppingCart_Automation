@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="10.222" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Test the Login Functionality" name="Check the Swag Labs login flow - #1.1" time="10.039">
+<system-out><![CDATA[
+Given User launches the swag labs url.......................................passed
+When User insert "standard_user" in username field..........................passed
+And User insert the "secret_sauce" in password field........................passed
+And User clicks on the login button.........................................passed
+Then Verify the swag labs products title in home............................passed
+]]></system-out>
+</testcase>
+</testsuite>
