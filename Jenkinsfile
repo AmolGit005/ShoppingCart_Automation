@@ -1,47 +1,25 @@
 pipeline {
     agent any
 
-   environment {
-           GIT_EXECUTABLE = 'C:\Program Files\Git'  // Ensure this is the correct path
-       }
+    triggers {
+        cron('0 2 * * *') // Schedule to run daily at 2:00 AM
+    }
 
     stages {
-        stage('Verify Git')
-        {
-                    steps {
-                        sh '"${env.GIT_EXECUTABLE}" --version'  // Verify Git path
-                    }
-                }
-
-        stage('Clone Repository')
-        {
-                    steps {
-                        sh '"${env.GIT_EXECUTABLE}" clone https://github.com/AmolGit005/ShoppingCart_Automation.git'
-                    }
-         }
-
         stage('Build') {
             steps {
-                echo 'Building the project...'
-                sh 'make build || mvn clean package'  // Modify based on your build tool
+                dir('C:\Users\Admin\.jenkins\workspace\ShoppingCart_Automation') { // Replace with the actual path
+                    bat 'mvn clean install' // Build the project
+                }
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Running tests...'
-                sh 'make test || mvn test'  // Modify based on your testing setup
+                dir('C:\Users\Admin\.jenkins\workspace\ShoppingCart_Automation') {
+                    bat 'mvn test' // Run the tests
+                }
             }
-        }
-
-    }
-
-    post {
-        success {
-            echo 'Pipeline executed successfully!'
-        }
-        failure {
-            echo 'Pipeline failed!'
         }
     }
 }
