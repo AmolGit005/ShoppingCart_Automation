@@ -1,17 +1,24 @@
 pipeline {
     agent any
 
-    environment {
-        REPO_URL = 'https://github.com/AmolGit005/ShoppingCart_Automation.git'
-        CREDENTIALS_ID = 'AmolGit005'  // Replace with your stored credentials ID
-    }
+   environment {
+           GIT_EXECUTABLE = 'C:\Program Files\Git'  // Ensure this is the correct path
+       }
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                git credentialsId: CREDENTIALS_ID, url: REPO_URL
-            }
-        }
+        stage('Verify Git')
+        {
+                    steps {
+                        sh '"${env.GIT_EXECUTABLE}" --version'  // Verify Git path
+                    }
+                }
+
+        stage('Clone Repository')
+        {
+                    steps {
+                        sh '"${env.GIT_EXECUTABLE}" clone https://github.com/AmolGit005/ShoppingCart_Automation.git'
+                    }
+         }
 
         stage('Build') {
             steps {
