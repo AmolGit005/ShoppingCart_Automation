@@ -1,25 +1,37 @@
 pipeline {
     agent any
-
-    triggers {
-        cron('0 2 * * *') // Schedule to run daily at 2:00 AM
-    }
-
     stages {
-        stage('Build') {
+        stage('Checkout') {
             steps {
-                dir('C:\Users\Admin\.jenkins\workspace\ShoppingCart_Automation') { // Replace with the actual path
-                    bat 'mvn clean install' // Build the project
-                }
+                // Pull code from the Git repository
+                git url: 'https://github.com/AmolGit005/ShoppingCart_Automation.git', branch: 'main'
             }
         }
-
+        stage('Build') {
+            steps {
+                // Run Maven build
+                bat 'mvn clean install'
+            }
+        }
         stage('Test') {
             steps {
-                dir('C:\Users\Admin\.jenkins\workspace\ShoppingCart_Automation') {
-                    bat 'mvn test' // Run the tests
-                }
+                // Run Maven tests
+                bat 'mvn test'
             }
+        }
+        stage('Package') {
+            steps {
+                // Package the application
+                bat 'mvn package'
+            }
+        }
+    }
+    post {
+        success {
+            echo 'Build and test completed successfully.'
+        }
+        failure {
+            echo 'Build or test failed. Check logs for details.'
         }
     }
 }
